@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
+$fonts: (
+  font-1: "Montserrat",
+  font-2: "Raleway",
+);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  background: #090809;
+  display: flex;
+  align-items: flex-end;
+
+  img {
+    margin-left: 150px;
+  }
+}
+
+section {
+  height: calc(100vh - 60px);
+  width: 100%;
+  background: url("../img/bg.png");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  .topInfoContent {
+    height: 100%;
+    margin-left: 150px;
+    margin-top: -40px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: map-get($map: $fonts, $key: font-2);
+
+    .topInfoTitle {
+      font-size: 80px;
+      font-weight: 400;
+    }
+
+    .topInfoText {
+      font-size: 26px;
+      line-height: 1.5;
+    }
+
+    .topInfoContactBtn {
+      width: 280px;
+      height: 48px;
+      color: #fff;
+      background: #c09b59;
+      border: none;
+      letter-spacing: 1px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  nav {
+    img {
+      margin-left: 30px;
+    }
+  }
+
+  section {
+    text-align: center;
+
+    .topInfoContent {
+      height: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: -40px;
+      width: 90%;
+      align-items: center;
+
+      .topInfoTitle {
+        font-size: 60px;
+      }
+
+      .topInfoText {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    img {
+      margin-left: 20px;
+    }
+  }
+
+  section {
+    text-align: center;
+
+    .topInfoContent {
+      margin-top: -40px;
+      margin-right: 10px;
+      margin-left: 10px;
+
+      .topInfoTitle {
+        font-size: 40px;
+        font-weight: 400;
+      }
+
+      .topInfoText {
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 50%;
+      width: auto;
+    }
+  }
+
+  section {
+    text-align: center;
+
+    .topInfoContent {
+      .topInfoContactBtn {
+        width: 90%;
+      }
+    }
+  }
+}

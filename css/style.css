@@ -1,1 +1,142 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  background: #090809;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav img {
+  margin-left: 150px;
+}
+
+section {
+  height: calc(100vh - 60px);
+  width: 100%;
+  background: url("../img/bg.png");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+section .topInfoContent {
+  height: 100%;
+  margin-left: 150px;
+  margin-top: -40px;
+  width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Raleway";
+}
+
+section .topInfoContent .topInfoTitle {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+section .topInfoContent .topInfoText {
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+section .topInfoContent .topInfoContactBtn {
+  width: 280px;
+  height: 48px;
+  color: #fff;
+  background: #c09b59;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+@media (max-width: 930px) {
+  nav img {
+    margin-left: 30px;
+  }
+  section {
+    text-align: center;
+  }
+  section .topInfoContent {
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -40px;
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .topInfoContent .topInfoTitle {
+    font-size: 60px;
+  }
+  section .topInfoContent .topInfoText {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav img {
+    margin-left: 20px;
+  }
+  section {
+    text-align: center;
+  }
+  section .topInfoContent {
+    margin-top: -40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  section .topInfoContent .topInfoTitle {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  section .topInfoContent .topInfoText {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 410px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav img {
+    height: 50%;
+    width: auto;
+  }
+  section {
+    text-align: center;
+  }
+  section .topInfoContent .topInfoContactBtn {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
