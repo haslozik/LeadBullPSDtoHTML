@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   height: 100px;
   width: 100%;
@@ -68,6 +72,14 @@ section .topInfoContent .topInfoContactBtn {
   border: none;
   letter-spacing: 1px;
   font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+section .topInfoContent .topInfoContactBtn:hover {
+  -webkit-filter: brightness(1.15);
+          filter: brightness(1.15);
 }
 
 @media (max-width: 930px) {

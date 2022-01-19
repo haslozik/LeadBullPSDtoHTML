@@ -10,6 +10,10 @@ $fonts: (
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   height: 100px;
   width: 100%;
@@ -59,6 +63,12 @@ section {
       border: none;
       letter-spacing: 1px;
       font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        filter: brightness(1.15);
+      }
     }
   }
 }
