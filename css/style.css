@@ -26,7 +26,7 @@ nav img {
   margin-left: 150px;
 }
 
-section {
+.topInfoContainer {
   height: calc(100vh - 60px);
   width: 100%;
   background: url("../img/bg.png");
@@ -36,7 +36,7 @@ section {
   color: #fff;
 }
 
-section .topInfoContent {
+.topInfoContainer .topInfoContent {
   height: 100%;
   margin-left: 150px;
   margin-top: -40px;
@@ -54,17 +54,17 @@ section .topInfoContent {
   font-family: "Raleway";
 }
 
-section .topInfoContent .topInfoTitle {
+.topInfoContainer .topInfoContent .topInfoTitle {
   font-size: 80px;
   font-weight: 400;
 }
 
-section .topInfoContent .topInfoText {
+.topInfoContainer .topInfoContent .topInfoText {
   font-size: 26px;
   line-height: 1.5;
 }
 
-section .topInfoContent .topInfoContactBtn {
+.topInfoContainer .topInfoContent .topInfoContactBtn {
   width: 280px;
   height: 48px;
   color: #fff;
@@ -77,19 +77,62 @@ section .topInfoContent .topInfoContactBtn {
   transition: 0.2s;
 }
 
-section .topInfoContent .topInfoContactBtn:hover {
+.topInfoContainer .topInfoContent .topInfoContactBtn:hover {
   -webkit-filter: brightness(1.15);
           filter: brightness(1.15);
 }
 
+.teamContainer {
+  font-family: "Raleway";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 70px 0;
+}
+
+.teamContainer .teamTitleText {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.teamContainer .teamTiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  max-width: 1000px;
+}
+
+.teamContainer .teamTiles .teamTile {
+  width: calc(100% / 3);
+}
+
+/* rwd */
 @media (max-width: 930px) {
   nav img {
     margin-left: 30px;
   }
-  section {
+  .topInfoContainer {
     text-align: center;
   }
-  section .topInfoContent {
+  .topInfoContainer .topInfoContent {
     height: 100%;
     margin-left: 10px;
     margin-right: 10px;
@@ -99,10 +142,10 @@ section .topInfoContent .topInfoContactBtn:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  section .topInfoContent .topInfoTitle {
+  .topInfoContainer .topInfoContent .topInfoTitle {
     font-size: 60px;
   }
-  section .topInfoContent .topInfoText {
+  .topInfoContainer .topInfoContent .topInfoText {
     font-size: 24px;
   }
 }
@@ -111,19 +154,19 @@ section .topInfoContent .topInfoContactBtn:hover {
   nav img {
     margin-left: 20px;
   }
-  section {
+  .topInfoContainer {
     text-align: center;
   }
-  section .topInfoContent {
+  .topInfoContainer .topInfoContent {
     margin-top: -40px;
     margin-right: 10px;
     margin-left: 10px;
   }
-  section .topInfoContent .topInfoTitle {
+  .topInfoContainer .topInfoContent .topInfoTitle {
     font-size: 40px;
     font-weight: 400;
   }
-  section .topInfoContent .topInfoText {
+  .topInfoContainer .topInfoContent .topInfoText {
     font-size: 21px;
   }
 }
@@ -144,10 +187,10 @@ section .topInfoContent .topInfoContactBtn:hover {
     height: 50%;
     width: auto;
   }
-  section {
+  .topInfoContainer {
     text-align: center;
   }
-  section .topInfoContent .topInfoContactBtn {
+  .topInfoContainer .topInfoContent .topInfoContactBtn {
     width: 90%;
   }
 }
