@@ -149,6 +149,30 @@ nav {
   }
 }
 
+.descriptionContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background: #d8c19a;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: map-get($map: $fonts, $key: font-1);
+
+  .descriptionLeft,
+  .descriptionRight {
+    width: 30%;
+    color: #000;
+    font-weight: 500;
+
+    .descriptionText {
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
 /* rwd */
 @media (max-width: 1600px) {
   .teamContainer {
@@ -190,6 +214,20 @@ nav {
   .teamContainer {
     .teamTitleText {
       font-size: 40px;
+    }
+  }
+
+  .descriptionContainer {
+    flex-direction: column;
+
+    .descriptionRight {
+      margin-top: 30px;
+    }
+
+    .descriptionLeft,
+    .descriptionRight {
+      width: 80%;
+      position: relative;
     }
   }
 }

@@ -192,6 +192,35 @@ nav img {
   color: #aaa;
 }
 
+.descriptionContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background: #d8c19a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Montserrat";
+}
+
+.descriptionContainer .descriptionLeft,
+.descriptionContainer .descriptionRight {
+  width: 30%;
+  color: #000;
+  font-weight: 500;
+}
+
+.descriptionContainer .descriptionLeft .descriptionText span,
+.descriptionContainer .descriptionRight .descriptionText span {
+  font-weight: 600;
+}
+
 /* rwd */
 @media (max-width: 1600px) {
   .teamContainer .teamTiles {
@@ -225,6 +254,20 @@ nav img {
   }
   .teamContainer .teamTitleText {
     font-size: 40px;
+  }
+  .descriptionContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .descriptionContainer .descriptionRight {
+    margin-top: 30px;
+  }
+  .descriptionContainer .descriptionLeft,
+  .descriptionContainer .descriptionRight {
+    width: 80%;
+    position: relative;
   }
 }
 
