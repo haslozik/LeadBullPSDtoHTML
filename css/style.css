@@ -142,11 +142,13 @@ nav img {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  border-radius: 5px;
 }
 
 .teamContainer .teamTiles .teamTile:hover {
   -webkit-box-shadow: 0px 11px 39px -12px #8b8b8b;
           box-shadow: 0px 11px 39px -12px #8b8b8b;
+  color: #c09b59;
 }
 
 .teamContainer .teamTiles .teamTile img {
