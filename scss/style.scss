@@ -173,6 +173,56 @@ nav {
   }
 }
 
+.offerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px 0;
+  font-family: map-get($map: $fonts, $key: font-1);
+
+  .offerTitle {
+    font-size: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+    font-weight: 600;
+
+    span {
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+
+  .offerContent {
+    width: 70%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 10px;
+    grid-template-areas:
+      ". . . ."
+      ". . . .";
+
+    .offerElement {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      i {
+        color: #c09b59;
+        font-size: 40px;
+      }
+
+      .offerNameText {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 /* rwd */
 @media (max-width: 1600px) {
   .teamContainer {
