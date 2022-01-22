@@ -150,6 +150,15 @@ nav {
 }
 
 /* rwd */
+@media (max-width: 1600px) {
+  .teamContainer {
+    .teamTiles {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+
 @media (max-width: 930px) {
   nav {
     img {
@@ -177,6 +186,12 @@ nav {
       }
     }
   }
+
+  .teamContainer {
+    .teamTitleText {
+      font-size: 40px;
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -201,6 +216,18 @@ nav {
 
       .topInfoText {
         font-size: 21px;
+      }
+    }
+  }
+
+  .teamContainer {
+    .teamTiles {
+      flex-direction: column;
+      width: 100%;
+
+      .teamTile {
+        width: 70%;
+        margin: 30px 0;
       }
     }
   }
