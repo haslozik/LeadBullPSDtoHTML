@@ -241,14 +241,17 @@ nav img {
 
 .offerContainer .offerTitle {
   font-size: 45px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   text-align: center;
   font-weight: 600;
 }
 
-.offerContainer .offerTitle span {
+.offerContainer .offerSubTitle {
   font-size: 17px;
   font-weight: 500;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .offerContainer .offerContent {
@@ -256,12 +259,9 @@ nav img {
   margin: 20px auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 40px 10px;
-      grid-template-areas: ". . . ." ". . . .";
 }
 
 .offerContainer .offerContent .offerElement {
@@ -369,6 +369,12 @@ nav img {
   .teamContainer .teamTiles .teamTile {
     width: 70%;
     margin: 30px 0;
+  }
+  .offerContainer .offerTitle {
+    font-size: 35px;
+  }
+  .offerContainer .offerSubTitle {
+    font-size: 15px;
   }
 }
 

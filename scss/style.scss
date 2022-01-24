@@ -183,26 +183,25 @@ nav {
 
   .offerTitle {
     font-size: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     text-align: center;
     font-weight: 600;
+  }
 
-    span {
-      font-size: 17px;
-      font-weight: 500;
-    }
+  .offerSubTitle {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 
   .offerContent {
     width: 70%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 40px 10px;
-    grid-template-areas:
-      ". . . ."
-      ". . . .";
 
     .offerElement {
       display: flex;
@@ -317,6 +316,16 @@ nav {
         width: 70%;
         margin: 30px 0;
       }
+    }
+  }
+
+  .offerContainer {
+    .offerTitle {
+      font-size: 35px;
+    }
+
+    .offerSubTitle {
+      font-size: 15px;
     }
   }
 }
