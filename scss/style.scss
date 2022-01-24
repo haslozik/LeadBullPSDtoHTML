@@ -278,6 +278,40 @@ nav {
   }
 }
 
+footer {
+  width: 100%;
+  background: #090809;
+  font-family: map-get($map: $fonts, $key: font-1);
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .leftSide {
+    height: 350px;
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    img {
+      width: 300px;
+    }
+
+    .footerSocials {
+      i {
+        margin-right: 10px;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          color: #bbb;
+        }
+      }
+    }
+  }
+}
+
 /* rwd */
 @media (max-width: 1600px) {
   .teamContainer {

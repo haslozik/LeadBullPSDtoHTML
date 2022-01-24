@@ -361,6 +361,52 @@ nav img {
   background: #222;
 }
 
+footer {
+  width: 100%;
+  background: #090809;
+  font-family: "Montserrat";
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .leftSide {
+  height: 350px;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .leftSide img {
+  width: 300px;
+}
+
+footer .leftSide .footerSocials i {
+  margin-right: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+footer .leftSide .footerSocials i:hover {
+  color: #bbb;
+}
+
 /* rwd */
 @media (max-width: 1600px) {
   .teamContainer .teamTiles {
