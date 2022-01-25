@@ -379,6 +379,16 @@ footer {
       width: 70%;
     }
   }
+
+  footer {
+    flex-direction: column;
+    padding-bottom: 40px;
+
+    .leftSide,
+    .rightSide {
+      width: 90%;
+    }
+  }
 }
 
 @media (max-width: 600px) {
